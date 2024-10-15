@@ -5,6 +5,11 @@
     text-decoration: none;
     box-sizing: border-box;
   }
+
+  html {
+    scroll-behavior: smooth;
+}
+
   
   @font-face {
     font-family: "Open";
@@ -42,7 +47,7 @@
     padding: 10px 100px;
   }
   
-  .azul a {
+  .azul p {
     color: white;
     font-family: "Open";
     font-size: 20px;
@@ -120,6 +125,7 @@
     margin-bottom: 20px;
     justify-content: center;
     align-content: center;
+    text-align: center;
   }
   
   .sobre h2 span {
@@ -130,6 +136,7 @@
     font-size: 24px;
     line-height: 1.6;
     text-align: justify;
+    font-family: "Open";
   }
   
   .sobre img {
@@ -137,6 +144,8 @@
     border-radius: 15px;
   }
   
+
+
   .dados {
     display: flex;
     justify-content: space-between;
@@ -169,12 +178,9 @@
   
 
 
-
   .servico {
-    padding: 50px 100px;
+    padding: 150px 200px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
   }
   
   .servico h2 {
@@ -190,32 +196,42 @@
   .servico p {
     font-size: 18px;
     margin-bottom: 40px;
+    font-family: "Open";
   }
   
   .todas {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
   }
   
   .produto {
-    background-color: #106EEA;
-    color: white;
+    color: black;
     padding: 20px;
     border-radius: 8px;
     width: 30%;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    border: 2px solid #8CA9CE; 
+    margin: 15px;
+  }
+
+  .produto p {
+    font-family: "RobotoB";
+    font-size: 24px;
   }
   
 
 
-
-
   .linha {
-    border-bottom: 2px solid #ddd;
-    margin: 40px 100px;
+    border-bottom: 2px solid #1150A3;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
+  
+
   
   .equipe {
     padding: 50px 100px;
@@ -223,7 +239,7 @@
   }
   
   .equipe h2 {
-    font-family: "PoppinsB";
+    font-family: "RobotoB";
     font-size: 36px;
     margin-bottom: 20px;
   }
@@ -233,22 +249,30 @@
   }
   
   .equipe p {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 40px;
+    font-family: "Open";
   }
   
   .pessoas {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 90px;
   }
   
   .pessoal {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black; 
+    border-radius: 6px;
   }
   
   .pessoal img {
-    max-width: 80%;
-    margin-bottom: 20px;
+    width: 280px;
+    height: 500px;
+    margin-bottom: 25px;
   }
   
   .pessoal h5 {
@@ -259,37 +283,58 @@
   
   .pessoal p {
     font-size: 16px;
-    color: #666;
+    color: black;
+    font-family: "Open";
   }
   
+
+
   .contato {
-    padding: 50px 100px;
+    padding: 80px 100px;
+    
   }
   
   .contato h2 {
-    font-family: "PoppinsB";
+    font-family: "RobotoB";
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .contato h2 span {
     color: #106EEA;
   }
   
+  
   .contato p {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
     margin-bottom: 40px;
+    font-family: "Open";
   }
   
   .informacoes {
     display: flex;
     justify-content: space-between;
+    
   }
   
   .endereco {
-    max-width: 40%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+  }
+
+  .endereco h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: "RobotoB";
+  }
+
+  .endereco p {
+    font-family: "RobotoR";
   }
   
   form {
@@ -325,10 +370,12 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
+
+
   footer {
-    background-color: #106EEA;
-    padding: 30px 100px;
+    background-color: #1150A3;
+    padding: 30px 160px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -337,23 +384,26 @@
   
   footer nav {
     display: flex;
-    justify-content: space-between;
-    width: 500px;
-  }
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
   
   footer nav a {
     font-family: "Open";
     color: white;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   footer h3 {
-    font-family: "PoppinsB";
-    font-size: 24px;
+    font-family: "Open";
+    font-size: 30px;
+    margin-bottom: 25px;
   }
   
   .redes img {
-    max-width: 40px;
+    width: 40px;
     margin-right: 20px;
   }
   
